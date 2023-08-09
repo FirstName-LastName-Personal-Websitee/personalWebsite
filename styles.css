@@ -1,0 +1,150 @@
+*{
+
+}
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(4, 92, 93);
+    border-radius: 1.5px;
+    text-decoration: none;
+    color: white;
+    padding: 7px 1em;
+    margin: 2.5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.89);
+
+    
+}
+a:hover{
+    background-color: rgb(8, 118, 120);
+    border-radius: 1.5px;
+    text-decoration: none;
+    color: white;
+    padding: 7px 1em;
+    margin: 2.5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+    transition: 1s linear;
+}
+
+.homepage-header{
+    display: flex;
+    justify-content:center ;
+
+}
+.sections{
+    background-color: gold;
+    border: black solid;
+    border-radius: 3px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    
+
+}
+body{
+    background-color: beige;;
+}
+
+.about-header{
+    background-color: gold;
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+    border: solid teal;
+    border-radius: 3px;
+
+}
+
+.photo-pic{
+    width: 425px;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.paragraph-containers{
+    width: 60%;
+
+
+}
+
+.photo-pic{
+    width: 30%;
+    height: 375px;
+    object-fit: cover;
+}
+
+.carti-pic{
+    width: 30%;
+}
+
+.ryu-container{
+    display: flex;
+    justify-content: flex-end;
+}
+
+@keyframes animation-ryu {
+    0% {
+        right: 65px;
+    }
+     
+    100% {
+        right: 895px;
+    }
+
+}
+
+.hadouken-fire{
+    rotate: 180deg;
+    position: absolute;
+    mix-blend-mode: multiply;
+    top:  70px;
+    right: 65px;
+    animation: animation-ryu 4s infinite;
+    z-index: 2;
+}
+
+.yell-text{
+    font-size: 75px;
+    color: red;
+    z-index: 0;
+    padding-top: 85px;
+
+
+}
+
+.cover{
+    position: absolute;
+    z-index: 1;
+    width: 600px;
+    height: 65px;
+    background-color: beige;
+    top: 90px;
+}
+
+@keyframes animation-text {
+    0% {
+        right: 585px;
+    }
+     
+    100% {
+        right: 1500px;
+    }
+
+}
+
+.cover-container{
+    
+    position: absolute;
+    z-index: 1;
+    width: 600px;
+    height: 100%;
+    right: 585px;
+    animation: animation-text 3.5s infinite .5s
+}
