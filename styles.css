@@ -5,6 +5,7 @@
 .navbar{
     display: flex;
     flex-direction: column;
+    margin-bottom: 10px;
 }
 
 a{
@@ -147,4 +148,10 @@ body{
     height: 100%;
     right: 585px;
     animation: animation-text 3.5s infinite .5s
+}
+.form{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
